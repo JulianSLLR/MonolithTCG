@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: oklch(100% 0 0);
+  --color-foreground: oklch(15.42% 0.01 264.53);
+  
+  --color-border: oklch(92.36% 0.01 264.53);
+  --color-input: oklch(92.36% 0.01 264.53);
+  --color-ring: oklch(15.42% 0.01 264.53);
+  
+  --color-primary: oklch(20.44% 0.02 264.53);
+  --color-primary-foreground: oklch(98.04% 0 0);
+  
+  --radius-lg: 0.5rem;
+  --radius-md: calc(0.5rem - 2px);
+  --radius-sm: calc(0.5rem - 4px);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: oklch(15.42% 0.01 264.53);
+    --color-foreground: oklch(98.04% 0 0);
+    --color-border: oklch(25.2% 0.02 264.53);
+  }
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+  }
+}
