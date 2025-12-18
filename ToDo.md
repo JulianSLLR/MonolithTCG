@@ -1,0 +1,21 @@
+# GLOBAL : 
+- AMÉLIORER CSS
+- RAJOUTER LOGO EN ICÔNE
+
+# RECHERCHE :
+- FIX "SÉRIE INCONNUE"
+- RAJOUTER OPTIONS TRI
+
+# CARTES / COLLECTION :
+- FIX IMAGES : SÉRIES ET CARTES
+- ENLEVER SETS TCGPocket +
+    - Carte Alternative A Jaune
+    - carte alternative A Jaune
+    - Promo-A
+    - L’Île Fabuleuse
+    - EX Forces Cachées Collection Zarbi
+
+# POSSIBILITÉ DE FAIRE DES "CLASSEURS" (WISHLIST EN GROS)
+
+# IMPORTATION
+- FAIRE EN SORTE QUE CA MARCHE

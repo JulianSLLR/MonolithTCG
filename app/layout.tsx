@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PokéVault",
+  title: "Monolith",
   description: "Gérez votre collection Pokémon",
 };
 
