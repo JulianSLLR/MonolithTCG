@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-<<<<<<< HEAD
-// IMPORT IMPORTANT : Le composant qui gère la session utilisateur
-import AuthSessionProvider from '@/components/layout/AuthSessionProvider';
-=======
->>>>>>> 7dfb18ec2f5ffeff2b24b472528cdca5c16065b5
+// On garde l'import pour la session
+import AuthSessionProvider from "@/components/layout/AuthSessionProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Monolith",
-  description: "Gérez votre collection de cartes Pokémon et items scellés",
+  title: "PokéVault",
+  description: "Gérez votre collection Pokémon",
 };
 
 export default function RootLayout({
@@ -30,9 +27,9 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-950`}
       >
-        {/* On enveloppe toute l'application avec le Provider d'Authentification */}
+        {/* On enveloppe l'application avec le fournisseur de session */}
         <AuthSessionProvider>
           {children}
         </AuthSessionProvider>

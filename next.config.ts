@@ -1,12 +1,17 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  reactCompiler: true,
   images: {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'assets.tcgdex.net', // Le serveur d'images de TCGDex
+        hostname: 'assets.tcgdex.net',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.pokemontcg.io',
         port: '',
         pathname: '/**',
       },
